@@ -1,0 +1,109 @@
+body {
+  justify-items: center;
+  align-content: center;
+  height: 100vh;
+  background: black;
+}
+.like {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+}
+
+.like:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dislike {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+}
+
+.dislike:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.heading {
+  font-size: xx-large;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  width: 350px;
+  min-width: 300px;
+  border-radius: 18px;
+  box-shadow: 20px 20px 10px rgba(102, 106, 111, 0.1);
+  overflow: hidden; /* keeps child corners rounded */
+  background: #fff;
+  flex: 0 1 auto;
+}
+.card-navbar {
+  justify-items: center;
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: white;
+  padding: 2px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.card-body {
+  justify-content: center;
+  padding-top: 10px;
+  font-size: large;
+  background: azure;
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+.card-footer {
+  background: azure;
+  padding: 12px 16px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
